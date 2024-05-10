@@ -17,7 +17,9 @@ const Shapes: FC<ISetLayers> = ({ setLayers }) => {
 		(state: RootState) => state.shapes.shapes,
 	);
 	return (
-		<div className={"absolute z-10 bg-white p-5 w-72"}>
+		<div
+			className={"absolute z-10 bg-white p-5 w-72 overflow-y-auto h-[28rem]"}
+		>
 			{shapes &&
 				shapes.map((shape, i) => (
 					<ShapeItem
